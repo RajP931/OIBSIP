@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Popsicle Landing Page</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    body {
+      background: linear-gradient(to bottom right, #fce9e0, #fdf5f0);
+      color: #222;
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+    .logo img {
+      width: 40px;
+    }
+    nav ul {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
+    nav ul li {
+      cursor: pointer;
+      font-weight: bold;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+    nav ul li.active::after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 4px;
+      background: #f44b61;
+      position: absolute;
+      bottom: -6px;
+      left: 0;
+    }
+    nav ul li:hover {
+      color: #f44b61;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 3rem 2rem;
+      flex-wrap: wrap;
+      gap: 3rem;
+      min-height: 70vh;
+    }
+    .content {
+      max-width: 45%;
+    }
+    .flavor-text {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+    }
+    .flavor-text span {
+      color: #f44b61;
+      font-weight: bold;
+    }
+    h1 {
+      font-size: 5rem;
+      line-height: 1;
+    }
+    h1 span {
+      display: block;
+      color: #f44b61;
+    }
+    .tagline {
+      margin-top: 1rem;
+      font-size: 1.5rem;
+    }
+    .action-row {
+      display: flex;
+      align-items: center;
+      margin-top: 2rem;
+    }
+    .buy-btn {
+      background: #f44b61;
+      color: white;
+      border: none;
+      padding: 0.8rem 2rem;
+      font-weight: bold;
+      font-size: 1rem;
+      margin-right: 1.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s;
+    }
+    .buy-btn:hover {
+      background: #d43a50;
+      transform: scale(1.05);
+    }
+    .price {
+      font-size: 1.5rem;
+    }
+    .highlight {
+      color: #f44b61;
+      font-weight: bold;
+    }
+    .image-section {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .image-section img {
+      width: 250px;
+      border-radius: 10px;
+    }
+    footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 2rem;
+      background-color: #fce9e0;
+      font-size: 0.85rem;
+      flex-wrap: wrap;
+    }
+    .footer-icons img {
+      width: 24px;
+      margin: 0 0.3rem;
+    }
+    .natural-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .natural-badge img {
+      width: 40px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="./G/vecteezy_ice-cream-with-berries-in-a-waffle-cone-ai-generative_28632588 (1).png" alt="Logo" />
+        <span>Ice Cream Shop</span>
+      </div>
+      <nav>
+        <ul>
+          <li class="active">HOME</li>
+          <li>MENU</li>
+          <li>ABOUT</li>
+          <li>CONTACT</li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="content">
+        <p class="flavor-text">MORE THAN <span>50 FLAVORS</span> TO CHOOSE FROM</p>
+        <h1>POP<br><span>SICLE</span></h1>
+        <p class="tagline">ALL YOU WANT!</p>
+        <div class="action-row">
+          <button class="buy-btn">BUY NOW</button>
+          <span class="price">$1 <span class="highlight">ONLY</span></span>
+        </div>
+      </section>
+
+      <section class="image-section">
+        <img src="./G/vecteezy_3d-illustration-of-three-ice-cream-cones-with-sprinkles-and_47763341.png" alt="Ice Cream 1" />
+        <img src="./G/vecteezy_3d-illustration-of-three-ice-cream-cones-with-sprinkles_47763234.png" alt="Ice Cream 2" />
+      </section>
+    </main>
+
+    <footer>
+      <p>SHOP NO. 111, BUILDING NAME, MAIN ROAD, COUNTRY | COPYRIGHT © Ice Cream Shop. ALL RIGHTS RESERVED.</p>
+      <div class="footer-icons">
+        <img src="./G/images.png" alt="Facebook" />
+        <img src="./G/twitter.jpg" alt="Twitter" />
+        <img src="./G/download.png" alt="Pinterest" />
+      </div>
+      <div class="natural-badge">
+        <img src="./G/SL_052920_31310_08.jpg" alt="Natural" />
+        <p><strong>100%</strong><br>NATURAL INGREDIENTS</p>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
